@@ -5,27 +5,72 @@ import {
   Pano,
   Text,
   View,
+  Model,
+  AmbientLight,
+  PointLight,
+  VrButton
 } from 'react-vr';
 
+
+import Scene1 from './Components/Scenes/Scene1.js';
+import MainMenu from './Components/Scenes/MainMenu.js';
+import Scene2 from './Components/Scenes/Scene2.js'
+
 export default class HelloVirtualWorld extends React.Component {
+constructor(){
+  super();
+  this.state={MainMenu: true, Scene1: false, Scene2: false};
+}
+
+  updateScene(scene) {
+    switch(scene) {
+      case 2:
+        this.setState({mainMenu: false, scene1: true});
+        break;
+      case 3:
+        this.setState({mainMenu: false, scene1: false});
+        break;
+    }
+  }
+
   render() {
+    const mainMenu = this.state.mainMenu;
+    const scene1 = this.state.scene1;
+    const scene2 = this.state.scene2;
+
     return (
       <View>
-        <Pano source={asset('white-room.jpg')}/>
-        <Text
-          style={{
-            backgroundColor: '#777879',
-            fontSize: 0.8,
-            fontWeight: '400',
-            layoutOrigin: [0.5, 0.5],
-            paddingLeft: 0.2,
-            paddingRight: 0.2,
-            textAlign: 'center',
-            textAlignVertical: 'center',
-            transform: [{translate: [0, 0, -5]}],
-          }}>
-          ricki wuz here
-        </Text>
+      <Pano source={
+        { uri: [
+          '../static_assets/white-square2.jpg',
+          '../static_assets/white-square2.jpg',
+          '../static_assets/white-square2.jpg',
+          '../static_assets/white-square2.jpg',
+          '../static_assets/white-square2.jpg',
+          '../static_assets/white-square2.jpg'
+        ]}
+      }/>
+
+      <PointLight style={{color: 'white', transform: [{translate: [0, 400, 700]}]}} />
+
+      <Scene1/>
+
+      <View style={{ margin: 0.1, height: 0.3, backgroundColor: '#1AC8F7'}}>
+        <VrButton onClick={() => this.updateScene(2)}>
+          <Text style={{fontSize: 0.2, textAlign: 'center'}}>
+          Scene 1
+          </Text>
+        </VrButton>
+      </View>
+
+      <View style={{ margin: 0.1, height: 0.3, backgroundColor: '#1AC8F7'}}>
+        <VrButton onClick={() => this.updateScene(3)}>
+          <Text style={{fontSize: 0.2, textAlign: 'center'}}>
+          Scene 2
+          </Text>
+        </VrButton>
+      </View>
+
       </View>
     );
   }
