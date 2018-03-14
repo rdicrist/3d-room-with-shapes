@@ -21,7 +21,6 @@ class Scene1 extends React.Component {
         style={{
           transform: [
             {translate: [-2, 0, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -37,7 +36,6 @@ class Scene1 extends React.Component {
         style={{
           transform: [
             {translate: [2, 0, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -53,7 +51,6 @@ class Scene1 extends React.Component {
         style={{
           transform: [
             {translate: [0, 0, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -69,7 +66,6 @@ class Scene1 extends React.Component {
         style={{
           transform: [
             {translate: [0, -2, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -86,7 +82,6 @@ class Scene1 extends React.Component {
         style={{
           transform: [
             {translate: [0, 2, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 

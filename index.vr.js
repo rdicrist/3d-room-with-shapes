@@ -15,6 +15,8 @@ import {
 import Scene1 from './Components/Scenes/Scene1.js';
 import MainMenu from './Components/Scenes/MainMenu.js';
 import Scene2 from './Components/Scenes/Scene2.js'
+import Scene3 from './Components/Scenes/Scene3.js'
+import Scene4 from './Components/Scenes/Scene4.js'
 
 export default class HelloVirtualWorld extends React.Component {
 constructor(){
@@ -53,7 +55,7 @@ constructor(){
 
       <PointLight style={{color: 'white', transform: [{translate: [0, 400, 700]}]}} />
 
-      <Scene1/>
+      <Scene4/>
 
       <View style={{ margin: 0.1, height: 0.3, backgroundColor: '#1AC8F7'}}>
         <VrButton onClick={() => this.updateScene(2)}>

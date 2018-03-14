@@ -8,19 +8,19 @@ import {
 }from 'react-vr';
 
 //Scene1
-class Scene1 extends React.Component {
+class Scene2 extends React.Component {
   render() {
     return (
     <View>
       <Model
         source={{
           obj: asset('spheres.obj'),
-          mtl: asset('spheres.mtl')
+          mtl: asset('msphere.mtl')
         }}
         lit={true}
         style={{
           transform: [
-            {translate: [-2, 0, -8]},
+            {translate: [-1, 0, -8]},
             // {rotateY: this.state.rotation}
           ]
         }}
@@ -31,12 +31,12 @@ class Scene1 extends React.Component {
       <Model
         source={{
           obj: asset('cone.obj'),
-          mtl: asset('cone.mtl')
+          mtl: asset('mcone.mtl')
         }}
         lit={true}
         style={{
           transform: [
-            {translate: [2, 0, -8]},
+            {translate: [-3, 1, -8]},
             // {rotateY: this.state.rotation}
           ]
         }}
@@ -47,12 +47,12 @@ class Scene1 extends React.Component {
       <Model
         source={{
           obj: asset('cube.obj'),
-          mtl: asset('cube.mtl')
+          mtl: asset('mcube.mtl')
         }}
         lit={true}
         style={{
           transform: [
-            {translate: [0, 0, -8]},
+            {translate: [3, -1, -8]},
             // {rotateY: this.state.rotation}
           ]
         }}
@@ -63,7 +63,7 @@ class Scene1 extends React.Component {
       <Model
         source={{
           obj: asset('dodecahedron.obj'),
-          mtl: asset('dodecahedron.mtl')
+          mtl: asset('mdodec.mtl')
         }}
         lit={true}
         style={{
@@ -79,7 +79,7 @@ class Scene1 extends React.Component {
       <Model
         source={{
           obj: asset('cylinder.obj'),
-          mtl: asset('cylinder.mtl'),
+          mtl: asset('mcylinder.mtl'),
 
         }}
         lit ={true}
@@ -97,4 +97,4 @@ class Scene1 extends React.Component {
     )
   }
 }
-module.exports = Scene1
+module.exports = Scene2
