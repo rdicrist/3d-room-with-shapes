@@ -8,20 +8,19 @@ import {
 }from 'react-vr';
 
 //Scene1
-class Scene5 extends React.Component {
+class Scene8 extends React.Component {
   render() {
     return (
     <View>
       <Model
         source={{
           obj: asset('cube.obj'),
-          mtl: asset('cube.mtl')
+          mtl: asset('mcube.mtl')
         }}
         lit={true}
         style={{
           transform: [
             {translate: [-2, 0, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -31,13 +30,12 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('spheres.obj'),
-          mtl: asset('spheres.mtl')
+          mtl: asset('msphere.mtl')
         }}
         lit={true}
         style={{
           transform: [
             {translate: [2, 0, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -47,13 +45,12 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('cylinder.obj'),
-          mtl: asset('cylinder.mtl')
+          mtl: asset('mcylinder.mtl')
         }}
         lit={true}
         style={{
           transform: [
             {translate: [0, 0, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -63,13 +60,12 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('cone.obj'),
-          mtl: asset('cone.mtl')
+          mtl: asset('mcone.mtl')
         }}
         lit={true}
         style={{
           transform: [
             {translate: [0, -2, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -79,14 +75,13 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('dodecahedron.obj'),
-          mtl: asset('dodecahedron.mtl'),
+          mtl: asset('mdodec.mtl'),
 
         }}
         lit ={true}
         style={{
           transform: [
             {translate: [0, 2, -8]},
-            // {rotateY: this.state.rotation}
           ]
         }}
 
@@ -97,4 +92,4 @@ class Scene5 extends React.Component {
     )
   }
 }
-module.exports = Scene5
+module.exports = Scene8
