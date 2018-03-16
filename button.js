@@ -17,7 +17,7 @@ export default class Button extends React.Component {
 	  },
 	  text: {
 		fontSize: 0.2,
-		textAlign: 'left',
+		textAlign: 'center',
 	  },
 	});
   }

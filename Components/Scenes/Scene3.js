@@ -84,7 +84,7 @@ class Scene3 extends React.Component {
         lit ={true}
         style={{
           transform: [
-            {translate: [-3, -2, -8]},
+            {translate: [-4, -2, -15]},
             // {rotateY: this.state.rotation}
           ]
         }}

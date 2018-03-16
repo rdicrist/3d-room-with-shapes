@@ -50,7 +50,7 @@ class Scene10 extends React.Component {
         lit={true}
         style={{
           transform: [
-            {translate: [0, 0, -8]},
+            {translate: [0, 0, -15]},
           ]
         }}
 
