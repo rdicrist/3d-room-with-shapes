@@ -45,22 +45,6 @@ class Scene3 extends React.Component {
 
       <Model
         source={{
-          obj: asset('cube.obj'),
-          mtl: asset('mcube.mtl')
-        }}
-        lit={true}
-        style={{
-          transform: [
-            {translate: [0, -1, -8]},
-            // {rotateY: this.state.rotation}
-          ]
-        }}
-
-        wireframe={false}
-      />
-
-      <Model
-        source={{
           obj: asset('dodecahedron.obj'),
           mtl: asset('mdodec.mtl')
         }}
@@ -86,6 +70,79 @@ class Scene3 extends React.Component {
           transform: [
             {translate: [-4, -2, -15]},
             // {rotateY: this.state.rotation}
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+      <Model
+        source={{
+          obj: asset('helix.obj'),
+          mtl: asset('mhelix.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [60,50, -500]},
+            {rotateZ: '90deg'}
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+      <Model
+        source={{
+          obj: asset('pyramid.obj'),
+          mtl: asset('mpyramid.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [-1.2,-3, -7]},
+            {rotateY: '90deg'},
+            {rotateX: '270deg'},
+
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+
+      <Model
+        source={{
+          obj: asset('icosahedron.obj'),
+          mtl: asset('micosa.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [3,-3, -10]},
+            {rotateY: '90deg'},
+            {rotateX: '270deg'},
+
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+      <Model
+        source={{
+          obj: asset('cuboid.obj'),
+          mtl: asset('mcube.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [0,-40, -150]},
+
           ]
         }}
 

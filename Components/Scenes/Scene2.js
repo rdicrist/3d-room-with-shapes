@@ -46,13 +46,13 @@ class Scene2 extends React.Component {
 
       <Model
         source={{
-          obj: asset('cube.obj'),
+          obj: asset('cuboid.obj'),
           mtl: asset('mcube.mtl')
         }}
         lit={true}
         style={{
           transform: [
-            {translate: [3, -1, -8]},
+            {translate: [20, -15, -150]},
             // {rotateY: this.state.rotation}
           ]
         }}
@@ -87,6 +87,62 @@ class Scene2 extends React.Component {
           transform: [
             {translate: [0, 2, -15]},
             // {rotateY: this.state.rotation}
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+      <Model
+        source={{
+          obj: asset('helix.obj'),
+          mtl: asset('mhelix.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [-120,100, -500]},
+            {rotateZ: '90deg'}
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+      <Model
+        source={{
+          obj: asset('pyramid.obj'),
+          mtl: asset('mpyramid.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [-1.2,-1.2, -7]},
+            {rotateY: '90deg'},
+            {rotateX: '270deg'},
+
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+
+      <Model
+        source={{
+          obj: asset('icosahedron.obj'),
+          mtl: asset('micosa.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [2.5,-2.5, -10]},
+            {rotateY: '90deg'},
+            {rotateX: '270deg'},
+
           ]
         }}
 

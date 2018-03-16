@@ -48,25 +48,25 @@ constructor(){
         this.setState({scene1: false, scene2: false, scene3: true, scene4: false, scene5: false, scene6: false, scene7: false, scene8: false, scene9: false, scene10: false});
         break;
       case 4:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: false, scene6: false, scene7: false, scene8: false, scene9: false, scene10: false});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: false, scene6: false, scene7: false, scene8: false, scene9: false, scene10: false});
         break;
       case 5:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: true, scene6: false, scene7: false, scene8: false, scene9: false, scene10: false});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: true, scene6: false, scene7: false, scene8: false, scene9: false, scene10: false});
         break;
       case 6:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: false, scene6: true, scene7: false, scene8: false, scene9: false, scene10: false});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: false, scene6: true, scene7: false, scene8: false, scene9: false, scene10: false});
         break;
       case 7:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: false, scene6: false, scene7: true, scene8: false, scene9: false, scene10: false});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: false, scene6: false, scene7: true, scene8: false, scene9: false, scene10: false});
         break;
       case 8:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: false, scene6: false, scene7: false, scene8: true, scene9: false, scene10: false});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: false, scene6: false, scene7: false, scene8: true, scene9: false, scene10: false});
         break;
       case 9:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: false, scene6: false, scene7: false, scene8: false, scene9: true, scene10: false});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: false, scene6: false, scene7: false, scene8: false, scene9: true, scene10: false});
         break;
       case 10:
-        this.setState({scene1: false, scene2: false, scene3: true, scene4: true, scene5: false, scene6: false, scene7: false, scene8: false, scene9: false, scene10: true});
+        this.setState({scene1: false, scene2: false, scene3: false, scene4: true, scene5: false, scene6: false, scene7: false, scene8: false, scene9: false, scene10: true});
         break;
 
     }
