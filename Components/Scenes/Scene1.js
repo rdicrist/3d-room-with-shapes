@@ -12,20 +12,6 @@ class Scene1 extends React.Component {
   render() {
     return (
     <View>
-      <Model
-        source={{
-          obj: asset('cube.obj'),
-          mtl: asset('mcube.mtl')
-        }}
-        lit={true}
-        style={{
-          transform: [
-            {translate: [-2, 0, -8]},
-          ]
-        }}
-
-        wireframe={false}
-      />
 
       <Model
         source={{
@@ -137,6 +123,23 @@ class Scene1 extends React.Component {
             {translate: [-2.5,-2.5, -10]},
             {rotateY: '90deg'},
             {rotateX: '270deg'},
+
+          ]
+        }}
+
+        wireframe={false}
+      />
+
+      <Model
+        source={{
+          obj: asset('cuboid.obj'),
+          mtl: asset('mcube.mtl'),
+
+        }}
+        lit ={true}
+        style={{
+          transform: [
+            {translate: [-40,-15, -150]},
 
           ]
         }}

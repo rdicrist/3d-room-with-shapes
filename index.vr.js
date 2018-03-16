@@ -176,7 +176,7 @@ constructor(){
                           scene10 ? (
                             <Scene10/>
                           ) : (
-                            <Scene1/>
+                            <EmptyScene/>
                           )
                         )
                       )
