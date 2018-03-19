@@ -50,7 +50,8 @@ class EmptyScene extends React.Component {
         lit={true}
         style={{
           transform: [
-            {translate: [0, 0, -15]},
+            {translate: [0, 0, -8]},
+            {scale: .5},
           ]
         }}
 
@@ -66,6 +67,7 @@ class EmptyScene extends React.Component {
         style={{
           transform: [
             {translate: [0, -2, -8]},
+
           ]
         }}
 

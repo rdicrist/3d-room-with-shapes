@@ -68,7 +68,8 @@ class Scene3 extends React.Component {
         lit ={true}
         style={{
           transform: [
-            {translate: [-4, -2, -15]},
+            {translate: [-4, -2, -8]},
+            {scale: .5},
             // {rotateY: this.state.rotation}
           ]
         }}
@@ -85,7 +86,8 @@ class Scene3 extends React.Component {
         lit ={true}
         style={{
           transform: [
-            {translate: [60,50, -500]},
+            {translate: [1.5,2, -8]},
+            {scale: .02},
             {rotateZ: '90deg'}
           ]
         }}
@@ -102,7 +104,7 @@ class Scene3 extends React.Component {
         lit ={true}
         style={{
           transform: [
-            {translate: [-1.2,-3, -7]},
+            {translate: [-1.2,-3, -8]},
             {rotateY: '90deg'},
             {rotateX: '270deg'},
 
@@ -122,7 +124,8 @@ class Scene3 extends React.Component {
         lit ={true}
         style={{
           transform: [
-            {translate: [3,-3, -10]},
+            {translate: [3,-3, -8]},
+            {scale: .9},
             {rotateY: '90deg'},
             {rotateX: '270deg'},
 
@@ -141,7 +144,8 @@ class Scene3 extends React.Component {
         lit ={true}
         style={{
           transform: [
-            {translate: [0,-40, -150]},
+            {translate: [0,-2, -8]},
+            {scale: .06},
 
           ]
         }}

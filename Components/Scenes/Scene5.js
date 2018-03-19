@@ -15,7 +15,7 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('cube.obj'),
-          mtl: asset('cube.mtl')
+          mtl: asset('mcube.mtl')
         }}
         lit={true}
         style={{
@@ -31,7 +31,7 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('spheres.obj'),
-          mtl: asset('spheres.mtl')
+          mtl: asset('msphere.mtl')
         }}
         lit={true}
         style={{
@@ -47,12 +47,13 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('cylinder.obj'),
-          mtl: asset('cylinder.mtl')
+          mtl: asset('mcylinder.mtl')
         }}
         lit={true}
         style={{
           transform: [
-            {translate: [0, 0, -15]},
+            {translate: [0, 0, -8]},
+            {scale: .5},
             // {rotateY: this.state.rotation}
           ]
         }}
@@ -63,7 +64,7 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('cone.obj'),
-          mtl: asset('cone.mtl')
+          mtl: asset('mcone.mtl')
         }}
         lit={true}
         style={{
@@ -79,7 +80,7 @@ class Scene5 extends React.Component {
       <Model
         source={{
           obj: asset('dodecahedron.obj'),
-          mtl: asset('dodecahedron.mtl'),
+          mtl: asset('mdodec.mtl'),
 
         }}
         lit ={true}
