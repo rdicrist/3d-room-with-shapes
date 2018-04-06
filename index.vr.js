@@ -99,7 +99,7 @@ constructor(){
         ]}
       }/>
 
-      <PointLight style={{color: 'white', transform: [{translate: [0, 400, 700]}]}} />
+      <PointLight style={{color: 'white', transform: [{translate: [0, 8, 8]}]}} />
 
 
       <View style={{

@@ -21,6 +21,8 @@ class EmptyScene extends React.Component {
         style={{
           transform: [
             {translate: [0, 0, -8]},
+            {rotateX: '30deg'},
+            {rotateY: '30deg'},
           ]
         }}
 

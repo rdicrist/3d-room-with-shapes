@@ -77,15 +77,14 @@ class Scene10 extends React.Component {
 
       <Model
         source={{
-          obj: asset('helix.obj'),
+          obj: asset('torus.obj'),
           mtl: asset('mhelix.mtl'),
 
         }}
         lit ={true}
         style={{
           transform: [
-            {translate: [-2.7,-1, -8]},
-            {scale: .02},
+            {translate: [0.7,-1, -8]},
             {rotateZ: '90deg'}
           ]
         }}

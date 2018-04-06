@@ -77,7 +77,7 @@ class Scene4 extends React.Component {
 
       <Model
         source={{
-          obj: asset('helix.obj'),
+          obj: asset('torus.obj'),
           mtl: asset('mhelix.mtl'),
 
         }}
@@ -85,7 +85,6 @@ class Scene4 extends React.Component {
         style={{
           transform: [
             {translate: [0,0, -8]},
-            {scale: .02},
             {rotateZ: '90deg'}
           ]
         }}

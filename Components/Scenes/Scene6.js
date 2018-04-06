@@ -77,15 +77,14 @@ class Scene6 extends React.Component {
 
       <Model
         source={{
-          obj: asset('helix.obj'),
+          obj: asset('torus.obj'),
           mtl: asset('mhelix.mtl'),
 
         }}
         lit ={true}
         style={{
           transform: [
-            {translate: [2.2,0, -8]},
-            {scale: .02},
+            {translate: [5,0, -8]},
             {rotateZ: '90deg'}
           ]
         }}
